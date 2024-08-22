@@ -1,0 +1,73 @@
+.homeSliderProductStrends > div {
+  background-color: #dc1e0f;
+}
+.homeSliderProductStrends div div div div div div {
+  background-color: #dc1e0f;
+}
+#masVendidos div:first-child {
+  background-color: #ffffff;
+}
+.homeSliderProductStrends .product-slider-container {
+  position: relative;
+
+  width: 100%;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+#title {
+  align-self: flex-start;
+  padding-bottom: 1rem;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 32px;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  #title {
+    margin-left: 2.3rem;
+  }
+  .product-pagination div.active {
+    display: none;
+  }
+}
+.product-slider-wrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.product-slider-image {
+  flex: 0 0 auto;
+}
+
+.product-slider-image.active {
+  flex: 0 0 auto;
+}
+
+.product-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.product-pagination div {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1.5px solid #ffffff;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.product-pagination div.active {
+  background-color: #ffffff;
+}

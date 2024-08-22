@@ -1,0 +1,215 @@
+/* .navbar {
+} */
+
+.titleHambContent {
+  display: flex;
+}
+.store-title {
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 37.5px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #0f1e7b;
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: italic;
+  padding-left: 1rem;
+}
+.menu-icon {
+  /*! tener en cuenta en desktop */
+  width: 100%;
+  color: #5e5e5e;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.menu-icon .hamburger-react {
+  /* Estilos predeterminados */
+  cursor: pointer;
+}
+
+.menu-icon .hamburger-react.active {
+  /* Estilos cuando el menú está activo */
+  width: 24px;
+  height: 24px;
+  top: 12px;
+  right: 0; /* Ajusta el menú al lado derecho */
+  transform: translateX(0); /* Asegura que el menú esté completamente visible */
+  gap: 0px;
+  opacity: 1; /* Asegura que el menú esté completamente visible */
+}
+
+.nav-links.open {
+  border-top: 1px solid #000000;
+  height: 100vh;
+  width: 100vw;
+  display: block; /* Muestra el menú de navegación cuando la clase open está presente */
+}
+
+/*! menu de secciones */
+.nav-links {
+  display: none; /* Oculta el menú de navegación por defecto */
+}
+.nav-links li {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  border-bottom: 0.65px solid #000000;
+  margin: 1rem;
+  padding-bottom: 0.7rem;
+  list-style: none;
+}
+.nav-links li {
+  border-bottom: 0.65px solid #000000;
+  margin: 1rem;
+}
+.nav-links li:last-child {
+  border: none;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #5e5e5e;
+}
+
+.ofertasContainer {
+  display: flex;
+  align-items: center;
+}
+#ofertas {
+  color: #dc1e0f;
+  border: none;
+  margin-right: 5px;
+}
+
+.ofertasContainer img {
+  width: 18px;
+}
+
+/* En el archivo NavBar.css */
+
+/* Estilos para pantallas pequeñas (menos de 768px) */
+@media (min-width: 768px) {
+  /* Oculta el menú de navegación por defecto */
+  .navbar {
+    display: none;
+  }
+}
+
+.headerGlobal {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.headerGlobalIcons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.icon-user-container {
+  display: flex;
+}
+/*? NAVBAR DESKTOP */
+/* Estilos para NavBarLargeScreen */
+.navbar-large {
+  display: none; /* Por defecto, se oculta en pantallas pequeñas */
+}
+.iconsHeader {
+  display: flex;
+  width: 100%;
+
+  justify-content: flex-end;
+  padding-right: 1.4rem;
+}
+
+/* Estilos para pantallas grandes (768px o más) */
+@media (min-width: 768px) {
+  .store-title {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .navbar-large {
+    display: flex; /* Muestra el NavBar en pantallas grandes */
+    margin-right: 1.5rem;
+    justify-content: flex-end;
+    padding-top: 0.5rem;
+  }
+  .iconsHeader {
+    justify-content: flex-end;
+    margin-right: 1.4rem;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links li {
+    border-bottom: none;
+    margin: 0rem;
+  }
+
+  .nav-links li {
+    margin-right: 20px;
+  }
+
+  .ofertasContainer img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  }
+}
+.nav-links li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.sarch-header-global {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 375px) and (max-width: 422px) {
+  .navigationCheckInAll {
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (min-width: 423px) and (max-width: 500px) {
+  .navigationCheckInAll {
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 555px) {
+  .navigationCheckInAll {
+    margin-left: 6rem;
+  }
+}
+
+@media screen and (min-width: 555px) and (max-width: 600px) {
+  .navigationCheckInAll {
+    margin-left: 9rem;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .navigationCheckInAll {
+    margin-left: 10rem;
+  }
+}
+
+@media screen and (min-width: 666px) and (max-width: 768px) {
+  .navigationCheckInAll {
+    margin-left: 13.5rem;
+  }
+}

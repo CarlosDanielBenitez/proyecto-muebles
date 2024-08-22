@@ -1,0 +1,65 @@
+.homeSliderGlobal {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.homeSliderGlobal h1 {
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 28px;
+  text-align: left;
+  padding: 0px 16px 0px 16px;
+  margin: 1rem 0;
+}
+.homeSliderSneaker {
+  display: flex;
+
+  flex-direction: column;
+}
+.homeSliderSneaker .slider-wrapper {
+  height: 100%;
+  max-height: 320px;
+}
+.homeSliderSneaker .slider-wrapper img {
+  max-height: 200px;
+  min-height: 200px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slider-wrapper .image-text {
+  position: absolute;
+  bottom: 33%; /* Ajusta la posición vertical del texto */
+  left: 50%; /* Ajusta la posición horizontal del texto */
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center; /* Alinea el texto al centro */
+  font-family: Rubik;
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 45.03px;
+  color: #ffffff;
+}
+
+/* circles slider */
+.homeSliderSneaker .pagination {
+  position: relative;
+  padding-top: 1rem;
+}
+.homeSliderSneaker .pagination div {
+  border: 1.5px solid #000000;
+}
+.homeSliderSneaker .pagination div.active {
+  background-color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .homeSliderSneaker {
+    display: none;
+  }
+}

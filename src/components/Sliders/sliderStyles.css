@@ -1,0 +1,115 @@
+/** Commercial styles (bike and sneakers) */
+/* radius buttons  slider */
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.slider-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slider-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-wrapper img {
+  /*! cambiar en desktop max-height none*/
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.slider-image {
+  display: none;
+}
+
+.slider-image.active {
+  display: block;
+}
+
+.pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  column-gap: 0.5rem;
+}
+
+.pagination div {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1.5px solid #ffffff;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination div.active {
+  background-color: #ffffff;
+}
+
+/*! Home configurations Sneakers Sliders */
+.homeSliderGlobal {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.homeSliderGlobal h1 {
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 32px;
+  text-align: left;
+  padding: 0px 16px 0px 16px;
+}
+.homeSliderSneaker {
+  display: flex;
+  flex-direction: column;
+}
+.homeSliderSneaker .slider-wrapper {
+  height: 100%;
+  max-height: 320px;
+}
+.homeSliderSneaker .slider-wrapper img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slider-wrapper .image-text {
+  position: absolute;
+  bottom: 33%; /* Ajusta la posición vertical del texto */
+  left: 50%; /* Ajusta la posición horizontal del texto */
+  /* transform: translate(-50%, -50%); */
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center; /* Alinea el texto al centro */
+  font-family: Rubik;
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 45.03px;
+  color: #ffffff;
+}
+
+/* circles slider */
+.homeSliderSneaker .pagination {
+  position: relative;
+  padding-top: 1rem;
+}
+.homeSliderSneaker .pagination div {
+  border: 1.5px solid #000000;
+}
+.homeSliderSneaker .pagination div.active {
+  background-color: #000000;
+}

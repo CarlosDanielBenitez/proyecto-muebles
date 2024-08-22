@@ -1,0 +1,232 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  padding: 0 2rem;
+  /** modificar en desktop */
+  justify-content: space-between;
+  width: 100%;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  color: white;
+}
+h2 {
+  font-size: 12px;
+}
+
+.text-section-nosotros p {
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  padding-bottom: 0.5rem;
+  color: #ffffff;
+}
+.text-section-nosotros button {
+  background-color: transparent;
+  border: #ffffff solid 1px;
+  color: #ffffff;
+  padding: 0.5rem;
+  margin: 1rem 0 2rem 0;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+}
+.image-section-nosotros {
+  align-items: center;
+  column-gap: 0.5rem;
+  justify-content: center;
+  min-width: 290px;
+  display: none;
+}
+
+.image-section-nosotros h2 {
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: start;
+}
+
+/* titulo */
+
+.mi-tienda {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.mi-tienda h1 {
+  padding: 2rem 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 37.5px;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+.image-section h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 37.5px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #ffffff;
+}
+
+/* data final */
+.box-sucursales {
+  display: flex;
+  column-gap: 1rem;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+.box-sucursales img {
+  width: 16px;
+  height: 20px;
+  top: 53px;
+  left: 1057px;
+  gap: 0px;
+  opacity: 0px;
+}
+.box-data-global {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+
+  row-gap: 1rem;
+}
+.box-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.2rem;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+}
+.image-section-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  column-gap: 1rem;
+}
+/*? iconos responsive desktop*/
+.image-section-data-hidden {
+  display: none;
+}
+
+.image-section-data h2 {
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.image-section-data img {
+  width: 29.46px;
+  height: 37.15px;
+}
+
+/*? moble end footer */
+.section-data-end-all {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-data-end-all div:nth-child(1) {
+  display: flex;
+  column-gap: 0.3rem;
+  margin-top: 1rem;
+}
+.image-section-data-show {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  row-gap: 1.3rem;
+}
+.image-section-data-show img:nth-child(2) {
+  margin-left: 1rem;
+  width: 49px;
+  opacity: 0px;
+}
+.section-data-end-all h2 {
+  font-family: Encode Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  .column {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+  }
+  .column p {
+    text-align: center;
+  }
+  .box-sucursales {
+    margin: 1rem 0;
+  }
+  /* titulo */
+
+  .watch {
+    display: block;
+  }
+  .hidden {
+    display: none;
+  }
+
+  .image-section-data-show {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* titulo */
+  .watch {
+    display: none;
+  }
+  /** footer */
+  /* iconos responsive*/
+  .image-section-nosotros {
+    display: flex;
+  }
+  /*? iconos responsive desktop*/
+  .image-section-data-hidden {
+    display: flex;
+  }
+
+  .section-data-end-all {
+    display: none;
+  }
+}

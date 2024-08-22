@@ -1,0 +1,139 @@
+/** servicios flex */
+.flex-services {
+  background-color: #ececec;
+  display: none;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0 5rem;
+}
+.flex-services div {
+  padding-top: 2rem;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.flex-services h2 {
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+.flex-services div img {
+  width: 100%;
+  height: 70px;
+  padding: 1rem;
+}
+.flex-services h3 {
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #3c3c3b;
+}
+.gridGallerySneaker {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .titulados-containers {
+    padding-left: 3rem;
+  }
+  .homeSliderServices {
+    display: none;
+  }
+  .flex-services {
+    display: flex;
+  }
+  .gridGallerySneaker {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .homeSliderGlobal .titulos {
+    width: 100%;
+    left: 3.4rem;
+    position: relative;
+  }
+
+  /*? grid calzas, zapatillas,pelotas etc. */
+
+  .homeSliderSneaker .slider-wrapper img {
+    max-height: none;
+  }
+  .homeSliderSneaker .pagination {
+    display: none;
+  }
+  .homeSliderSneaker .slider-image {
+    display: block;
+    max-height: none;
+  }
+
+  .homeSliderSneaker {
+    max-height: none;
+  }
+  .homeSliderSneaker .slider-wrapper {
+    display: grid;
+    max-height: none;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    max-height: none;
+    grid-template-areas:
+      "zapatillas futbol futbol pelotas"
+      "zapatillas calzas calzas pelotas";
+    padding: 0 4rem;
+  }
+  /*? imagenes de grid */
+  .homeSliderSneaker .slider-image {
+    display: block;
+  }
+
+  .homeSliderSneaker .slider-image:nth-child(1) {
+    grid-area: zapatillas;
+    height: 500px;
+    background-color: #bf2a2f;
+    height: 100%;
+  }
+  .homeSliderSneaker .slider-image:nth-child(2) {
+    grid-area: futbol;
+  }
+  .homeSliderSneaker .slider-image:nth-child(3) {
+    grid-area: pelotas;
+  }
+
+  .homeSliderSneaker .slider-image:nth-child(4) {
+    grid-area: calzas;
+  }
+
+  .homeSliderSneaker .slider-wrapper .image-text {
+    font-size: 18px;
+    position: relative;
+    transform: none;
+    font-weight: bold;
+    text-align: center; /* Alinea el texto al centro */
+    font-family: Rubik;
+    font-size: 28px;
+    display: flex;
+    justify-content: start;
+    bottom: 140px;
+    left: 30px;
+  }
+  .homeSliderSneaker .slider-wrapper .image-text:first-child {
+    color: #ffffff;
+  }
+}
+
+#tendencias h1 {
+  color: #ffffff;
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+}

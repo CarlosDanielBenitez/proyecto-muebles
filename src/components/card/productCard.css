@@ -1,0 +1,72 @@
+.product-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto Flex;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  background-color: #dc1e0f;
+  padding-left: 0.5rem;
+}
+
+.product-card {
+  background-color: #ffffff;
+  max-height: 402px;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0px 2px 6px 0px #cccaca;
+  border-radius: 15px;
+}
+.product-card img {
+  width: 100%;
+  padding: 0rem 2rem;
+  margin-top: 1rem;
+  object-fit: cover;
+  object-position: center;
+}
+.product-card h2 {
+  color: #5e5e5e;
+  font-family: Roboto Flex;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  padding: 0rem 1.7rem;
+  top: 232px;
+}
+.product-card p {
+  font-family: Roboto Flex;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28.13px;
+  text-align: center;
+  color: #000000b8;
+}
+.product-card button {
+  font-family: Encode Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  color: #dc1e0f;
+  border: #dc1e0f solid 1px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 3px 1rem;
+  margin-bottom: 1rem;
+}
+.product-card button:hover {
+  cursor: pointer;
+}
+.product-list {
+  background-color: #dc1e0f;
+  padding: 1rem;
+}

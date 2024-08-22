@@ -1,0 +1,33 @@
+/*? NavigationCheckIn */
+.navigationCheckInAll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 0.5rem;
+}
+.icon-user-container {
+  display: flex;
+  column-gap: 0.5rem;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.icon-user-container p {
+  display: none;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17.58px;
+  text-align: center;
+  color: #5e5e5e;
+}
+.icon-user-global Link {
+  text-decoration: none;
+  list-style: none;
+}
+@media screen and (min-width: 768px) {
+  .icon-user-container p {
+    display: block;
+  }
+}
