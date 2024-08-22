@@ -34,7 +34,7 @@ const NavBar = () => {
           {/* Menú de navegación */}
           <ul className={`nav-links ${isOpen ? "open" : ""}`}>
             <li>
-              <Link to="/">Muebles</Link> {/* Reemplaza href por to */}
+              <Link to="/muebles">Muebles</Link> {/* Reemplaza href por to */}
             </li>
             <li>
               <Link to="/">Calzados</Link> {/* Reemplaza href por to */}
