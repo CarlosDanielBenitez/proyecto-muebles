@@ -1,10 +1,10 @@
 const SliderData = {
   //* commercial images
   images: [
-    { src: "/images/bike-commercial.png", alt: "bike-commercial-1" },
-    { src: "/images/bike-commercial.png", alt: "bike-commercial-2" },
-    { src: "/images/bike-commercial.png", alt: "bike-commercial-3" },
-    { src: "/images/bike-commercial.png", alt: "bike-commercial-4" },
+    { src: "/images/bike-commercial.jpg", alt: "bike-commercial-1" },
+    { src: "/images/bike-commercial.jpg", alt: "bike-commercial-2" },
+    { src: "/images/bike-commercial.jpg", alt: "bike-commercial-3" },
+    { src: "/images/bike-commercial.jpg", alt: "bike-commercial-4" },
   ],
 
   imgSneaker: [
